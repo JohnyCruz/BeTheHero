@@ -6,7 +6,7 @@
 
     display: flex; /*Faz com que todos is itens fiquem alinhados um do lado do outro*/
     align-items: center;/*Alinha os itens verticalmente no centro*/
-    justify-content: center;/*Alnha os itens horizontalmente no centro*/
+    justify-content: space-between;/*Alnha os itens horizontalmente no centro*/
 }
 
 .logon-container section.form{

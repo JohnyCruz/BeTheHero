@@ -1,10 +1,12 @@
 import React from 'react';
-import {FiLogIn} from 'react-icons/fi'
+import {Link} from 'react-router-dom'; //importação para fazer a aplição ter o comportamento de um SPA
+import {FiLogIn} from 'react-icons/fi';
 
-import './styles.css'
+import './styles.css';
+import '../../global.css';
 
-import heroesImg from '../../assets/heroes.png'
-import logoImg from '../../assets/logo.svg'
+import heroesImg from '../../assets/heroes.png';
+import logoImg from '../../assets/logo.svg';
 export default function Logon(){
     return (
         <div className="logon-container">
@@ -14,10 +16,10 @@ export default function Logon(){
                     <h1>Faça seu logon</h1>
                     <input placeholder="Sua ID"/>
                     <button className="button" type="submit">Entrar</button>
-                    <a href="/Register">
+                    <Link className="back_link" to="/Register"> {/* aqui substituí o "a" por "Link" e o "href" por "to" */}
                         <FiLogIn size={16} color="#E02041"/>
                         Não tenho cadastro
-                        </a>
+                    </Link>
                 </form>
             </section>
             <img src={heroesImg} alt="Heroes"/>

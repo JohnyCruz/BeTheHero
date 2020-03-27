@@ -55,3 +55,14 @@ form input{
 .button:hover{
     filter: brightness(80%);/*reduz o brilho do botao para 80%*/
 }
+
+.back_link{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    color: #41414d;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}

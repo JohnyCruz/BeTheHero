@@ -18,7 +18,7 @@ module.exports = {
         })
     
         console.log(data);
-        return response.json(id);
+        return response.json({id});
     },
     async index(request,response){
         const ongs = await connection('ongs').select('*');

@@ -10,6 +10,6 @@ module.exports = {
         if(!name){
             return response.status(400).json({erro: "No ONG found with this ID"});
         }
-        return response.json({name});
+        return response.json(name);
     }
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');7
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');W
 
 
 * {
@@ -16,8 +16,42 @@ body{
 
 input, button, textarea {
     font: 400 18px Roboto, sans-serif;
+    box-sizing: border-box;
 }
 
 button {
     cursor: pointer;
+}
+
+
+form input{
+    width: 100%;
+    height: 60px;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 0 24px;
+}
+
+.button{
+    width: 100%;
+    height: 60px;
+    background: #e02041;
+    border: 0;
+    border-radius: 8px;
+    color: #FFF;
+    font-weight: 500;/*uma fonte média*/
+    margin-top: 16px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;/*What does text decoration do?*/
+    font-size: 18px;
+    line-height: 60px;
+    
+    transition: filter 0.2s; /*o efeito na transição será aplicado no filtro do hover*/
+
+}
+
+.button:hover{
+    filter: brightness(80%);/*reduz o brilho do botao para 80%*/
 }

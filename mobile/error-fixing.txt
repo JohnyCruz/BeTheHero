@@ -1,0 +1,3 @@
+Comano deve ser executando no PowerShell quando der algum erro de ExecutionPolicy no expo
+Get-ExecutionPolicy -List
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted
